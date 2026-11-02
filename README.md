@@ -1,2 +1,2 @@
 
-Wedding Reception Invitation website
+ Invitation website
