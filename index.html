@@ -1,0 +1,437 @@
+<!doctype html>
+
+<html lang="bn">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>তুর্বসু &amp; অন্বেষা  — বিবাহ, ১৩ ডিসেম্বর ২০২৬, বাগুইয়াটি, কলকাতা</title>
+    <meta
+      name="description"
+      content="১৫ ডিসেম্বর ২০২৬-এ কোদালিয়া, হুগলিতে তুর্বসু ও অন্বেষার প্রীতিভোজ অনুষ্ঠানের আমন্ত্রন।"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="তুর্বসু &amp; অন্বেষা — বিবাহের আমন্ত্রণ" />
+    <meta
+      property="og:description"
+      content="১৩ ও ১৫ ডিসেম্বর ২০২৬, বাগুইয়াটি ও কোদালিয়ায়।"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="./index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+    <link
+     href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
+     rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <button id="musicToggle" class="music-toggle" aria-label="গান থামান">
+    🎵
+  </button>
+
+  <body class="pre-entry">
+    <audio id="weddingMusic" loop preload="auto">
+      <source src="assets/Wedding-Music-2.mp3" type="audio/mpeg">
+    </audio>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home"><span>Turbasu</span> &nbsp;&amp;&nbsp <span>Anwesha</span></a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#family">পরিবার</a>
+          <a href="#events">অনুষ্ঠান</a>
+          <a href="#personal-invitation">আমন্ত্রণ</a>
+          <a href="#venue">অনুষ্ঠানস্থল</a>
+          <!-- <a href="#gallery">গ্যালারি</a>
+          <a href="#rsvp">RSVP</a> -->
+          <a href="#travel">পথনির্দেশিকা</a>
+          <!-- <a href="#hashtag">হ্যাশট্যাগ</a> --> 
+          <a href="#countdown">প্রতিগণনা</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="মেনু খুলুন">☰</button>
+        
+
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content reveal">
+          <div
+            class="envelope"
+            id="envelope"
+            role="button"
+            tabindex="0"
+            aria-label="খাম খুলতে ট্যাপ করুন">
+
+            <div class="envelope-flap"></div>
+            <div class="envelope-seal" aria-hidden="true">🦋</div>
+            <div class="envelope-body">
+              <p class="envelope-monogram" aria-hidden="true"><span>T</span> &ensp; &ensp; <span>A</span></p>
+            </div>
+          </div>
+          <p class="envelope-hint" id="envelopeHint"> প্রবেশ করতে খামে ট্যাপ করুন</p>
+          <div class="hero-main reveal" id="heroMain" hidden>
+            <p class="kicker" id="heroKicker"></p>
+            <h1 class="script" id="heroNames"></h1>
+            <div class="floral-divider" aria-hidden="true">
+              <svg viewBox="0 0 48 24">
+                <path
+                  d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                ></path>
+                <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="hero-art">
+              <img id="heroImg" alt="বাঙালি বিয়ের সাজে তুর্বসু ও অন্বেষার ছবি" />
+              <span class="sticker s1">🌹</span>
+              <span class="sticker s2">🌷</span>
+              <span class="sticker s3">✨</span>
+              <span class="sticker s4">🌸</span>
+            </div>
+            <p class="hero-tag" id="heroTag"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="scratch">
+        <div class="section-heading">
+          <p class="eyebrow">Something Special &nbsp; Awaits</p>
+          <h2 class="title">আপনার জন্য অপেক্ষা করছে বিশেষ কিছু</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">সোনালী কার্ডে স্ক্র্যাচ করুন </p>
+        </div>
+        <div class="scratch-wrap glass">
+          <div class="scratch-reveal">
+            <p class="script gold" id="scratchName"></p>
+            <p class="scratch-date-bn" id="scratchDate-bn"></p>
+            <p class="scratch-date-en" id="scratchDate-en"></p>
+            <p class="scratch-day" id="scratchDay"></p>
+            <p class="scratch-venue" id="scratchVenue"></p>
+          </div>
+          <canvas id="scratchCanvas"></canvas>
+        </div>
+        <button class="btn-ghost" id="scratchReset" type="button">কার্ড পুনরায় সেট করুন</button>
+      </section>
+
+      <section class="section" id="family">
+        <div class="section-heading">
+          <p class="eyebrow">Meet the Families</p>
+          <h2 class="title">পরিবার পরিচিতি</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">যাঁদের অকুণ্ঠ স্নেহ ও শুভকামনায় এই শুভ আয়োজন সম্পূর্ণতা পেয়েছে</p>
+        </div>
+        <div class="family-grid" id="familyGrid"></div>
+      </section>
+
+      <section class="section" id="events">
+        <div class="section-heading">
+          <p class="eyebrow">Event Schedule</p>
+          <h2 class="title">স্মারকলিপি</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">ভালোবাসা,হাসি আর উদযাপনের আবহে রচিত হবে দুই সন্ধ্যার মধুর স্মৃতিগাথা</p>
+        </div>
+        <div class="timeline" id="eventsList"></div>
+      </section>
+
+      <section class="section" id="personal-invitation">
+        <div class="section-heading">
+          <p class="eyebrow">Cordial Invitation</p>
+          <h2 class="title">সহৃদয় আমন্ত্রণ</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle
+                cx="24"
+                cy="12"
+                r="2.4"
+                fill="currentColor"
+              ></circle>
+            </svg>
+          </div>
+          <p class="sub">
+            আমাদের জীবনের এই অনন্য অধ্যায়ের সূচনায় আপনাদের উপস্থিতি আন্তরিকভাবে কাম্য।
+          </p>
+        </div>
+        <div class="personal-invitation-card glass">
+          <div class="invitation-ornament" aria-hidden="true">
+            <span>🦋</span> <br><br>
+            <span>শ্রী শ্রী প্রজাপতয়ে নমঃ</span> <br><br>
+            <span>"যদিদং হৃদয়ং মম, ত্বদিদং হৃদয়ং তব"</span>
+          </div>
+          <div class="invitation-message">
+            <p>মহাশয় / মহাশয়া, <br>
+              সবিনয় নিবেদন,</p>
+            <p>
+              আগামী ২৬শে অগ্রহায়ণ ১৪৩৩ (ইং ১৩ই ডিসেম্বর ২০২৬) রবিবার,আমার কনিষ্ঠ ভ্রাতা শ্রী শচীন্ত সেনগুপ্ত মহাশয়ের একমাত্র পুত্র কল্যাণীয় <strong>'তুর্বসু'-র </strong> সহিত ক্লাব টাউন গার্ডেন্স, রথতলা, বেলঘরিয়া নিবাসী শ্রী অরুণাভ বন্দ্যোপাধ্যায়ের একমাত্র কন্যা কল্যাণীয়া <strong>'অন্বেষা'-র</strong> শুভ পরিণয় সুসম্পন্ন হইবে। 
+            </p>
+            <p>
+              এতদুপলক্ষ্যে আগামী <strong>২৮শে অগ্রহায়ণ, ১৪৩৩ (ইং ১৫ই ডিসেম্বর ২০২৬) মঙ্গলবার</strong> সন্ধ্যায় <strong>'পথসাথী ব্যাঙ্কোয়েট'</strong>-এ এক প্রীতিভোজের আয়োজন করা হয়েছে। আপনি/আপনারা সবান্ধবে ওই প্রীতিভোজ অনুষ্ঠানে উপস্থিতি থাকিয়া নবদম্পতিকে আশীর্বাদ দানে বাধিত করিবেন। আপনাদের উপস্থিতি একান্ত কাম্য।
+            </p>
+            <p>
+              পত্রদ্বারা নিমন্ত্রণের ত্রুটি মার্জনী করিবেন।
+            </p>
+            <p class="invitation-closing">
+              নিবেদনে ইতি, <br>
+              বিনীত,
+            </p>
+            <p class="invitation-signature">
+              শ্রীযুক্ত অম্বিকাপদ সেনগুপ্ত (মেজ জেঠু) 
+            </p>
+            <p class="invitation-closing">
+              <strong>যোগাযোগ :</strong> ৮১০০৪৫১০৪৮, ৯৪৩৩৭৬৩৮৯৯
+            </p>
+          </div>
+          <div class="invitation-ornament bottom" aria-hidden="true">
+            <span>✦ ✦ ✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="venue">
+        <div class="section-heading">
+          <p class="eyebrow">Where it happens</p>
+          <h2 class="title">অনুষ্ঠান প্রাঙ্গন</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">যে স্থানে প্রীতিভোজ অনুষ্ঠিত হবে</p>
+        </div>
+        <div class="venue glass">
+          <div class="venue-info">
+            <h3 id="venueName"></h3>
+            <p id="venueAddress"></p>
+            
+          </div>
+          <div class="venue-map"><iframe id="venueMap" title="অনুষ্ঠান প্রাঙ্গনের অবস্থান" loading="lazy"></iframe></div>
+          <a class="btn-gold" id="venueDir" target="_blank" rel="noreferrer">
+            <svg class="directions-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 3L3 10.5l7 2 2 7L21 3z"></path>
+            </svg>
+            <span>দিকনির্দেশ দেখুন</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="travel">
+        <div class="section-heading">
+          <p class="eyebrow">Reaching the Venue</p>
+          <h2 class="title">পথনির্দেশিকা</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">অনুষ্ঠানস্থলে কীভাবে পৌঁছাবেন?</p>
+        </div>
+        <div class="cards" id="travelGrid"></div>
+      </section>
+   
+     <!-- <section class="section" id="hashtag">
+        <div class="section-heading">
+          <p class="eyebrow">Hashtag</p>
+          <h2 class="title">হ্যাশট্যাগ</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub">বিয়ের হ্যাশট্যাগ</p>
+        </div>
+        <div class="hashtag glass">
+          <h2 class="script gold" id="hashtagText"></h2>
+          <p class="sub">প্রতিটি ছবি, রিল ও মুহূর্তে ট্যাগ করুন, যাতে আমরা সবকিছু একসাথে সংগ্রহ করতে পারি।</p>
+          <br>
+          <button class="btn-gold" id="copyHashtag" type="button">হ্যাশট্যাগ কপি করুন</button>
+        </div>
+      </section>  -->
+
+      <section class="section" id="countdown">
+        <div class="section-heading">
+          <p class="eyebrow">Almost there...</p>
+          <h2 class="title">প্রতিগণনা</h2>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <p class="sub" id="cdSub"></p>
+        </div>
+        <div class="countdown" id="cdGrid"></div>
+      </section>  
+
+      <section class="section thanks" id="thanks">
+        <div class="thanks-heart">🌹</div>
+        <div class="section-heading">
+          <h2 class="script gold" id="thanksTitle"></h2>
+          <p class="sub" id="thanksBody"></p>
+          <div class="floral-divider" aria-hidden="true">
+            <svg viewBox="0 0 48 24">
+              <path
+                d="M4 12c6-8 12-8 20 0 8 8 14 8 20 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              ></path>
+              <circle cx="24" cy="12" r="2.4" fill="currentColor"></circle>
+            </svg>
+          </div>
+        </div>
+        <p class="script" id="thanksNames"></p>
+        <p class="wed-info" id="thanksInfo"></p>
+      <!--  <div class="social-links" aria-label="Social media profiles">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/suva.paul/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="বরের ইনস্টাগ্রাম"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+            <span>@suva.paul</span>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/sarbani715/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="কনের ইনস্টাগ্রাম"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+            <span>@sarbani715</span>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.facebook.com/suva.iitk/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="ফেসবুক"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4.5h-3c-2.8 0-4.5 1.7-4.5 4.7V11H7v3.5h2.5V20H13v-5.5h3l.5-3.5H13V9.5c0-1 .3-1.5 1-1.5z"></path>
+            </svg>
+            <span>@Suvankar</span>
+          </a>
+        </div> -->
+      </section> 
+    </main>  
+
+    <footer class="footer">
+      <p id="footText"></p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lb-close" id="lbClose" aria-label="বন্ধ করুন">✕</button>
+      <button class="lb-prev" id="lbPrev" aria-label="পূর্ববর্তী">‹</button>
+      <img id="lbImg" alt="" />
+      <button class="lb-next" id="lbNext" aria-label="পরবর্তী">›</button>
+      <p class="lb-cap" id="lbCap"></p>
+    </div>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
