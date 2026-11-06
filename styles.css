@@ -511,7 +511,7 @@ h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", 
 
 .scroll-hint {
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 900;
@@ -521,7 +521,7 @@ h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", 
   align-items: center;
   gap: 2px;
 
-  padding: 10px 18px;
+  padding: 6px 14px;
 
   background: rgba(255,255,255,0.2);
   backdrop-filter: blur(12px);
@@ -567,8 +567,8 @@ h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", 
 
 @media (max-width: 768px) {
   .scroll-hint {
-    bottom: 78px;
-    padding: 9px 16px;
+    bottom: 10px;
+    padding: 6px 14px;
   }
 
   .scroll-text {
