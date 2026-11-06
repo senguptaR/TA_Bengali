@@ -567,7 +567,7 @@ h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", 
 
 @media (max-width: 768px) {
   .scroll-hint {
-    bottom: 10px;
+    bottom: -10px;
     padding: 6px 14px;
   }
 
