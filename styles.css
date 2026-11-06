@@ -505,3 +505,60 @@ body:not(.pre-entry) #scratchCanvas {  visibility: visible; }
 h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", serif; display: block; font-size: 0.72em;
   margin-top: 6px; }
 
+/* Floating Scroll Hint */
+.scroll-hint {
+  position: fixed;
+  right: 20px;
+  bottom: 75px; /* above music button */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  backdrop-filter: blur(10px);
+
+  color: var(--rose);
+  font-size: 0.85rem;
+  font-family: "Tiro Bangla", sans-serif;
+
+  box-shadow: var(--shadow-soft);
+
+  animation: scrollHintFloat 2s ease-in-out infinite;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.scroll-hint.hide {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.scroll-arrow {
+  color: var(--gold);
+  font-size: 1.1rem;
+  animation: scrollArrowBounce 1.5s infinite;
+}
+
+@keyframes scrollHintFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes scrollArrowBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+@media (max-width: 600px) {
+  .scroll-hint {
+    right: 14px;
+    bottom: 72px;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+  }
+}

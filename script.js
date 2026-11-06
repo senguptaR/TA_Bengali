@@ -377,5 +377,24 @@
       }
     });
   }
+/* ---------- Scroll hint ---------- */
+var scrollHint = $("scrollHint");
+
+function updateScrollHint() {
+  if (!scrollHint) return;
+
+  var scrolled = window.scrollY + window.innerHeight;
+  var pageHeight = document.documentElement.scrollHeight;
+
+  /* Hide near bottom */
+  if (scrolled >= pageHeight - 250) {
+    scrollHint.classList.add("hide");
+  } else {
+    scrollHint.classList.remove("hide");
+  }
+}
+
+window.addEventListener("scroll", updateScrollHint, { passive: true });
+updateScrollHint();
 })();
 
