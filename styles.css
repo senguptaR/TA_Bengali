@@ -505,60 +505,73 @@ body:not(.pre-entry) #scratchCanvas {  visibility: visible; }
 h1 .bn, h2 .bn, h3 .bn, .title .bn { font-family: "Tiro Bangla", "Tiro Bangla", serif; display: block; font-size: 0.72em;
   margin-top: 6px; }
 
-/* Floating Scroll Hint */
+/* ===================================
+   Scroll Down Indicator
+=================================== */
+
 .scroll-hint {
   position: fixed;
-  right: 20px;
-  bottom: 75px; /* above music button */
-  z-index: 999;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
 
-  padding: 10px 14px;
+  padding: 10px 18px;
+
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(201,162,39,0.35);
   border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(201, 162, 39, 0.45);
-  backdrop-filter: blur(10px);
-
-  color: var(--rose);
-  font-size: 0.85rem;
-  font-family: "Tiro Bangla", sans-serif;
 
   box-shadow: var(--shadow-soft);
 
-  animation: scrollHintFloat 2s ease-in-out infinite;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+
+  animation: scrollBounce 2s ease-in-out infinite;
 }
 
-.scroll-hint.hide {
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
+.scroll-text {
+  font-family: "Tiro Bangla", sans-serif;
+  font-size: 0.8rem;
+  color: var(--rose);
+  white-space: nowrap;
 }
 
 .scroll-arrow {
+  font-size: 1.2rem;
   color: var(--gold);
-  font-size: 1.1rem;
-  animation: scrollArrowBounce 1.5s infinite;
+  line-height: 1;
 }
 
-@keyframes scrollHintFloat {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+@keyframes scrollBounce {
+  0%,100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
 
-@keyframes scrollArrowBounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
+/* fade-out state */
+.scroll-hint.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .scroll-hint {
-    right: 14px;
-    bottom: 72px;
+    bottom: 78px;
+    padding: 9px 16px;
+  }
+
+  .scroll-text {
     font-size: 0.75rem;
-    padding: 8px 12px;
   }
 }

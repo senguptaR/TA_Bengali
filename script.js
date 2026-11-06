@@ -331,6 +331,9 @@
       }
 
       document.body.classList.remove("pre-entry");
+
+      showScrollHint();
+
       setTimeout(function () { paintCover(); }, 100);
 
       /* Start wedding music */
@@ -377,24 +380,29 @@
       }
     });
   }
-/* ---------- Scroll hint ---------- */
+/* ---------- Scroll Hint ---------- */
+
 var scrollHint = $("scrollHint");
 
-function updateScrollHint() {
+function showScrollHint() {
+  if (!scrollHint) return;
+  scrollHint.hidden = false;
+  scrollHint.classList.remove("hide");
+}
+
+function hideScrollHint() {
+  if (!scrollHint) return;
+  scrollHint.classList.add("hide");
+}
+
+window.addEventListener("scroll", function () {
   if (!scrollHint) return;
 
-  var scrolled = window.scrollY + window.innerHeight;
-  var pageHeight = document.documentElement.scrollHeight;
-
-  /* Hide near bottom */
-  if (scrolled >= pageHeight - 250) {
-    scrollHint.classList.add("hide");
+  if (window.scrollY > 1300) {
+    hideScrollHint();
   } else {
     scrollHint.classList.remove("hide");
   }
-}
-
-window.addEventListener("scroll", updateScrollHint, { passive: true });
-updateScrollHint();
+}, { passive: true });
 })();
 
