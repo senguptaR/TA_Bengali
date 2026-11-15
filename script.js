@@ -36,7 +36,7 @@
   $("heroImg").src = W.hero.image;
   /* $("heroSub").textContent = W.hero.subtitle; */
   $("heroTag").textContent = W.couple.tagline;
-  $("footText").textContent = "একসঙ্গে পথচলার অঙ্গীকার • নতুন অধ্যায়ের শুরু © তুর্বসু - ২০২৬" ;
+  $("footText").textContent = "একসঙ্গে পথচলার অঙ্গীকার • নতুন অধ্যায়ের শুরু © তুর্বসু – ২০২৬" ;
 
   /* ---------- Scratch card ---------- */
   $("scratchName").textContent = W.weddingLabel;
