@@ -76,7 +76,7 @@
       cleared = true;
       canvas.style.transition = "opacity .6s ease";
       canvas.style.opacity = 0;
-      toast("তারিখটি মনে রাখুন — " + W.weddingDateLabelen + "✔️");
+      toast("তারিখটি মনে রাখুন — " + W.weddingDateLabelen + " 📆");
     }
   }
   canvas.addEventListener("pointerdown", function (e) { scratching = true; scratchAt(e); });

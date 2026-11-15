@@ -422,7 +422,7 @@ a { color: inherit; }
 
 /* Thanks */
 .thanks { text-align: center; }
-.thanks h2 { font-size: clamp(2.4rem, 9vw, 4rem); }
+.thanks h2 { font-size: clamp(3rem, 9vw, 4rem); }
 #thanksNames { color: var(--rose);  font-family: "great vibes", "Tiro Bangla";  font-size: 3rem;  margin-bottom: 0.25rem; }
 #thanksInfo {  font-size: 0.9rem; color: #241d22; }
 #thanksInfo span { color: #241d22; }
